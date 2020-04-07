@@ -2,6 +2,7 @@ body {
   font-family: "Verdana", serif;
   background-image: linear-gradient(0deg, #ff0000 20%, #000000 90%);
   color: #ffffff;
+  background-attachment: fixed;
 }
 a {
   text-decoration-line: none;
@@ -33,11 +34,12 @@ a:HOVER  {
 }
 
 figure {
-   display: inline-block;
-   border: 2px solid #000000;
-   box-shadow: 2px 2px 5px #000000;
-   padding: 5px 5px 150px 5px;
-   position: relative;
+  display: inline-block;
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 5px #000000;
+  padding: 5px 5px 150px 5px;
+  box-sizing: border-box;
+  position: relative;
  }
 
  figcaption {

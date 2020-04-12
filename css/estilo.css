@@ -52,5 +52,5 @@ figure{
 li a:HOVER{
   color: black;
   background-color:#1B96BD;
-  transition: color 2s;
+  transition: color 3s;
 }

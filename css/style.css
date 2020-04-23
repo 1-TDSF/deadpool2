@@ -1,0 +1,49 @@
+body {
+  font-family: verdana, sans-serif;
+  background-image: linear-gradient(0deg, #ff0000 20%, #000000 90%);
+  background-image: fixed;
+  color: #ffffff;
+}
+
+a{
+  text-decoration: none;
+  color: #1B96BD;
+  font-weight: 500;
+}
+
+
+#container {
+  margin: 0 10% 0 10%;
+}
+
+.cabecalho {
+  background: rgba(0,0,0, 0.5);
+  padding: 40px;
+  font-size: 40px;
+  position: relative;
+}
+
+li{
+  text-decoration: none;
+  display: inline;
+  padding: 0 5px 0 5px;
+}
+
+figure {
+  display: inline-block;
+  border: solid 2px #000000;
+  box-shadow: 2px 2px 5px black;
+  padding: 5px 5px 150px 5px;
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  font-weight: 600;
+}
+
+.rodape {
+  padding: 50px;
+  background-color: rgba(0,0,0, 0.5);
+  font-size: 30px;
+}

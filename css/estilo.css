@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*● Para o body determine os seguintes estilos:
+| família da fonte -Verdana ou fonte sem serifa.
+| fundo -coloque cores gradiente de forma linear com 0deg de posicionamento e(#ff0000 20% , #000000 90%).
+|Fixar o fundo
+| O texto na cor branca#ffffff.
+*/
+body{
+  font-family: 'Verdana', sans-serif;
+  background-color: #000000;
+  background-image: linear-gradient(0deg, #ff0000 20%, #000000 90%);
+  color:#ffffff;
+}
+
+/*Para os elementos de hyperlinks <a>:
+| Retire o estilo de decoração de todos os elementos.
+| Deixe o texto na cor azul #1B96BD.
+| Deixe o texto com opeso 500.
+*/
+a{
+  text-decoration: none;
+  color:#1B96BD;
+  
+}
+/*Para a <div> que envolve todos os elementos determine os seguintes estilos:
+| Margens superior 0, direita 10%, inferior 0 eesquerda 10%.
+*/
+.container{
+  margin: 0 10%;
+}
+/*Para a classe cabeçalho determine os seguintes estilos:
+|Determine a cor de fundo como preto em transparência de 0.5.-utilize rgba(0,0,0, 0.0);
+|Preenchimentode 40px.
+|Determine o tamanho do texto em 40px.
+|Posicionamento relativo.*/
+.cabecalho{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  font-size: 40px;
+  position: relative;
+}
+
+/*Para a lista determine os seguintes estilos:
+| Retire o estilo de lista.
+| Coloque os itens em linha.
+| Aplique um preenchimento: supeior 0, direita 5px, inferior  0, esquerdade 5px.
+*/
+.cabecalho ul li{
+  list-style: none;
+  display: inline;
+  padding: 0 5px;
+  background-color: none;
+  border-radius: 5px;
+  transition: background-color 2s;
+}
+/*Para o elemento que envolveas imagens determine os seguintes estilos:
+| Que a visualização do elemento seja feita em linha e bloco.
+| Adicionar uma borda de espessura de 2px que seja sólida e de cor preta.
+| Colocar sombra na borda de: 2px de movimentação horizontal, 2px de vertical e 5px de espalhamento e de cor preta.(box-shadow)
+| Aplique um controle de borda para que a imagem não vaze do quadro.
+| Coloque um espaçamento interno de: 5px 5px 150px 5px;
+| Determine a posição do elemento como relativa. */
+.corpo figure{
+  display: inline-block;
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 5px #000000;
+  padding: 5px 5px 150px 5px;
+  position: relative;
+}
+/*Para o elemento responsável pelas legendas determine os seguintes estilos: | Posição absoluta.*/
+.corpo figure figcaption{
+  position: absolute;
+}
+/*Para a classe rodape determine os seguintes estilos:
+| Espaçamento interno 50px.
+| Cor de fundo com transparência de 0.5 preta.
+| Tamanho do texto em 30px; */
+.rodape{
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+}
+/*Crie um efeito hover sobre os itens da lista, fazendo com que a cor de fundo e a cor do texto se alternem de forma suave.(Transition)*/
+.cabecalho ul li:HOVER{
+  background-color: #d8d8eb;
+  color: #0226a8;
+}
+/*Estilize todos os nomes de Artistas, Personagens que aparecem nas legendas.
+| Deixe o texto com a espessura 600.*/
+.artista{
+  font-weight: 600;
+}

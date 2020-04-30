@@ -1,14 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
-  font-family: "Verdana", serif;
+  font-family: "Verdana", sans-serif;
+  background-color: #000000;
   background-image: linear-gradient(0deg, #ff0000 20%, #000000 90%);
   color: #ffffff;
   background-attachment: fixed;
 }
 a {
-  text-decoration-line: none;
+  text-decoration: none;
   color: #1b96bd;
   font-weight: 500;
-  transition: color 2s;
 }
 #container {
   margin: 0 10% 0 10%;
@@ -16,29 +23,29 @@ a {
 
 .cabecalho {
   background-color: rgba(0,0,0,0.5);
-  transition: color 2s;
   padding: 40px;
   font-size: 40px;
   position: relative;
 }
 
-li {
-  text-decoration-line:none;
+.cabecalho ul li {
+  list-style: none;
   display: inline;
-  padding: 0 5px 0 5px;
-
+  padding: 0 5px;
+  background-color: none;
+  transition: background-color 2s;
 }
 
-a:HOVER  {
+.cabecalho ul li:HOVER  {
+  background-color: #d8d8eb;
   color: #1d98bf;
 }
 
-figure {
+.corpo figure {
   display: inline-block;
   border: 2px solid #000000;
   box-shadow: 2px 2px 5px #000000;
   padding: 5px 5px 150px 5px;
-  box-sizing: border-box;
   position: relative;
  }
 
@@ -50,4 +57,7 @@ figure {
   padding: 50px;
   background-color: rgba(0,0,0,0.5);
   font-size: 30px;
+}
+.artista{
+  font-weight: 600;
 }
